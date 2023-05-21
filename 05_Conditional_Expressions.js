@@ -21,6 +21,7 @@ if (num % 2 == 0 && num % 3 == 0) {
 }
 
 //  Ternary operators .......
+
 console.log("you can", a < 18 ? "Not Drive" : "Drive");
 
 let a2 = 20;

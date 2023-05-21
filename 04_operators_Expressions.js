@@ -1,14 +1,15 @@
-// operators in javascript............
+// operators in javascript =>>>>>>>>>>>
 
 console.log("operators in javascript");
-//  Arithmatic operators
+
+//  Arithmatic operators =>
 
 let a = 10;
 let b = 4;
 console.log("a+b", a + b);
 console.log("a-b", a - b);
 console.log("a/b", a / b);
-console.log("a**b", a ** b);
+console.log("a**b", a * b);
 console.log("a+%b", a % b);
 console.log("++a", ++a);
 console.log("a++", a++);
@@ -17,19 +18,19 @@ console.log("a--", a--);
 console.log("a", a);
 console.log("a--", a--);
 
-// Assigmment operators
+// Assignment operators =>
 
 let c = 1;
 c += 5;
-console.log("c = ", c);
+console.log("c = ", c); //6
 c -= 5;
-console.log("c = ", c);
+console.log("c = ", c); //-4
 c *= 5;
 console.log("c = ", c);
 c %= 5;
 console.log("c = ", c);
 
-//  Comparision operators
+//  Comparision operators =>
 
 let comp1 = 6;
 let comp2 = 7;
@@ -39,7 +40,7 @@ console.log("comp1 != comp2 is", comp1 != comp2);
 console.log("comp1 === comp2 is", comp1 === comp2);
 console.log("comp1 !==  comp2 is", comp1 !== comp2);
 
-//  Logical operators
+//  Logical operators =>
 
 let x = 9;
 let y = 8;
