@@ -52,6 +52,7 @@ console.log(a1);
 // null => null   // This represents the intentional absence of any object value.
 // number => 0
 // boolean => false
+// BigInt => 0n.
 // String => ""
 // Symbol => Symbol()
 // Undefine => Undefine
