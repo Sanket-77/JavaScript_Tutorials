@@ -1,5 +1,6 @@
+//  Function => is block of code which perform specific task.
 function oneplusAvg(x, y) {
-  return 1 + (x = y) / 2;
+  return 1 + (x + y) / 2;
 }
 
 let a = 6;
@@ -27,8 +28,7 @@ const hello = () => {
 let v = hello();
 console.log(v);
 
-
-// write function for create mean 4 numbers
+// write function for create mean of 4 numbers
 
 function mean(p, q, r, s) {
   return (p + q + r + s) / 4;

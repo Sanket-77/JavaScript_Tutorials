@@ -1,4 +1,4 @@
-// HTML Attribute
+// HTML Attribute =>
 let first = document.getElementById("first");
 let a = first.getAttribute("class");
 console.log(a);
@@ -11,5 +11,9 @@ first.removeAttribute("class");
 
 console.log(first.attributes);
 
-{/* <div id="first" data-game="mario" data-player="sanket"></div>; */}
+{
+  /* <div id="first" data-game="mario" data-player="sanket"></div>; */
+}
 console.log(first.dataset);
+
+

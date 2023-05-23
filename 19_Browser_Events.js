@@ -1,4 +1,4 @@
-// .......
+// .......onClick function => 
 
 let a = document.getElementsByClassName("first")[0];
 a.onclick = () => {
@@ -9,7 +9,7 @@ a.onclick = () => {
 //  Add event listener
 
 btn.addEventListener("click", function (e) {
-  alert("hello sejal");
+  alert("hello");
 });
 
 // ................ add event listner on click.

@@ -2,7 +2,7 @@
 
 localStorage.setItem("name", "sanket");
 
-let key = prompt("ENter Key you want to set");
+let key = prompt("Enter Key you want to set");
 let value = prompt("ENter value you want to set");
 
 localStorage.setItem(key, value);

@@ -1,18 +1,25 @@
+//
 let name = "sanket";
 console.log(name.length);
 
 console.log(name[0]);
 
-//  Template literal use backtics insted of quotes...........
+//  Template literal use backtics insted of quotes ...........
 
 // ** String Interpolation --> We can insert variable directly in template literal this is called string interpolation.
+
+let a = "sanket";
+let b = 8668677575;
+console.log(`${a} phone Number is ${b}`);
 
 //  Escape sequence charecters.................
 
 let fruit = "banana's";
+let pop = "papa's";
 console.log(fruit);
+console.log(pop);
 
-//  ***** String Methods *****  //......................
+//  ***** String Methods ***** 
 
 /* 
 .length
@@ -39,11 +46,4 @@ console.log(friend2.trim()); //.trim
 
 sentence = "The quick brown fox jumps over the lazy dog.";
 const word = "fox";
-console.log(
-  `The word "${word}" ${
-    sentence.includes(word) ? "is" : "is not"
-  } in the sentence`
-);
-
-
-
+console.log(`The word "${word}" ${sentence.includes(word) ? "is" : "is not"} in the sentence`);

@@ -1,7 +1,7 @@
-//  Asynchonus action are the action we initiate now and they finish later. --ex = setTimeout.
-//  Synchonus action are initiate and finish one by one. -- ex = prompt(),alert,
+//  Asynchronous action are the action we initiate now and they finish later. --ex = setTimeout.
+//  Synchronous action are initiate and finish one by one. -- ex = prompt(),alert,
 
-//  Asynchornus Action =>
+//  Asynchronous Action =>
 
 console.log("start");
 setTimeout(function () {
@@ -63,5 +63,3 @@ console.log(result1);
 a.forEach((num) => {
   console.log("array num ", num);
 });
-
-//

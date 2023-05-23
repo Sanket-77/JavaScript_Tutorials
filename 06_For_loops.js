@@ -1,8 +1,9 @@
+// 
 for (let i = 0; i <= 3; i++) {
   console.log(i);
 }
 
-// for loop....................
+// for loop...........................
 
 let sum = 0;
 n = prompt("enter number");
@@ -23,7 +24,7 @@ for (key in obj) {
   console.log(`key is ${key} and value is ${obj[key]}`);
 }
 
-//  question 1 ..............................
+//  question 1 ........................
 
 let marks = {
   sanket: "98",

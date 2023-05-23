@@ -1,3 +1,4 @@
+// 
 alert("Hello");
 
 setTimeout(function () {
@@ -9,8 +10,8 @@ setTimeout(function () {
 let a = setTimeout(function () {
   alert("Its ok");
 }, 4000);
-let b = prompt("Do you want to run the setTimeout?");
-if ("n" == b) {
+let b = prompt("Do you want to run the setTimeout? y/n");
+if (b == "n" ) {
   clearTimeout(a);
 }
 console.log(a);

@@ -29,7 +29,7 @@ console.log(p, q);
 
 // ********** Spred Operator => convert array into object ************
 
-let arr1 = [3, 5, 9];
+let arr1 = [3, 5, 9, 5, 7, 9, 3, 23, 56];
 let obj1 = { ...arr1 };
 console.log(obj1);
 
@@ -49,7 +49,7 @@ var m = 7; // Declaration hoisted to the top but initialization is not
 //  let m = 3 ===> cannot access before initialization.
 console.log(m);
 
-//  using var function expretion not hoisted
+//  using var function expression not hoisted
 
 var af = function () {}; // cannot access before initialization
 

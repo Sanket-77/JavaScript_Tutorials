@@ -10,11 +10,14 @@ console.log(marks[3]);
 ///////////////////////  Array Methods  ////////////////////////////////////////////////////////////////
 
 let num = [1, 2, 3, 4, 5];
-let b = num.toString(); //toString 
+console.log(num);
+console.log(typeof num);
+let b = num.toString(); //toString
 console.log(b);
 console.log(typeof b);
 let c = num.join("_");
 console.log(c, typeof c);
+
 num.pop(); //.pop() remove last num in array
 console.log(num);
 num.push(7); //.push(x) add num in array
@@ -39,13 +42,13 @@ let n = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 delete n[5];
 console.log(n); //[ 1, 2, 3, 4, 5, <1 empty item>, 7, 8, 9 ] --> it can not change array length.
 
-//  sort Array .......... change original array **** interview Qestion
+//  sort Array .......... change original array **** interview Qestion.
 
-let numb = [1, 14, 26, 268, 34, 369, 45, 5, 589, 9];
+let numb = [1, 14, 26, 34, 69, 45, 58, 89, 19];
 numb.sort();
 console.log(numb); // [1, 14, 26, 268, 34,369, 45,  5, 589,  9] ---> sorting alphabetically not in like 1,2,3
 
-// sort in ---> assending or desending order  ==> use compare function for sorting in assending or desending.
+// sort in --> assending or desending order  ==> use compare function for sorting in ascending or descending.
 
 let compare = (a, b) => {
   return a - b;
@@ -58,11 +61,11 @@ console.log(numb);
 numb.reverse();
 console.log(numb);
 
-//  splice  & slice .............********** 
+//  splice  & slice .............**********
 
 let narr = [23, 345, 67, 98, 345, 768, 123, 654];
-narr.splice(2, 3, 1022, 1023, 1024, 1025);
-console.log(narr);
+narr.splice(2, 3, 1022, 1023, 1024, 1025); // Splice =>
+console.log(narr); // [23, 345, 1022, 1023, 1024, 1025, 768, 123, 654]
 
 // slice.... create new array.....
 
@@ -71,19 +74,19 @@ console.log(newArr);
 
 ///////////////////////  loops in array ///////////////////////////////////////////////////////////
 
-//  for loop .................
+//  for loop ....................
 
 let x = [1, 3, 5, 7, 9];
 for (i = 0; i < x.length; i++) {
   console.log(x[i]);
 }
-//  forEach loop ...............
+//  forEach loop .................
 
 x.forEach((element) => {
   console.log(element * element);
 });
 
-//  Array.from...................
+//  Array.from.....................
 
 let name = "sanket";
 let arrr = Array.from(name);
@@ -103,7 +106,7 @@ let ar2 = [12, 46, 98, 43, 57];
 let a2 = ar2.filter((a) => {
   return a < 50;
 });
-console.log("filter value = ", a2);
+console.log("filtered value less than 50 is = ", a2);
 
 //  Array Reduce method............
 
@@ -125,4 +128,25 @@ console.log(getRandom());
 console.log(getRandom());
 console.log(getRandom());
 
+//  RandomNumber between 1-100
 
+const randomNumber1 = Math.floor(Math.random() * 100) + 1;
+
+console.log(randomNumber1);
+
+// Using Function =>
+
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 100) + 1;
+}
+
+generateRandomNumber();
+console.log(generateRandomNumber());
+
+//  Generate random number between two given numbers
+
+function randomIntFromInterval(min, max) { 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+randomIntFromInterval(10,25);

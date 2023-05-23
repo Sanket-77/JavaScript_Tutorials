@@ -24,9 +24,8 @@ if (num % 2 == 0 && num % 3 == 0) {
 
 console.log("you can", a < 18 ? "Not Drive" : "Drive");
 
-let a2 = 20;
-let n = a2 > 18 ? "you can drive" : "you can not drive";
-console.log(n);
+let a2 = prompt("Enter Age");
+console.log(a2 > 18 ? "you can drive" : "you can not drive");
 
 // switch case ...............
 

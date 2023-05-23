@@ -28,6 +28,7 @@ try {
 }
 console.log("Script os still running");
 
+
 //  /// Finally => finally always run with or without error
 // use finally for cleanup
 

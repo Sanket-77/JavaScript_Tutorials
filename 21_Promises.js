@@ -1,6 +1,6 @@
-// ** Promise =>  is a promise of code execution. The code is either executed or fails. In both cases subscriber will be notified.
+// ** Promise => is a promise of code execution. The code is either executed or fails. In both cases subscriber will be notified.
 //promises => promises is process which used to perform any kind of async operation.
-// Promises has two state => resolve and reject
+// Promises has two state => resolve and reject.
 // resolve =>  state means there execution is successfully done.
 // reject => execution is failed.
 
@@ -29,7 +29,7 @@ let pro = new Promise((resolve, reject) => {
 
 // ///////////////////////////////////////////////
 
-// Promise Chaining
+// Promise Chaining => 
 
 let p = new Promise((resolve, reject) => {
   console.log(" Hey i am not resolved");

@@ -20,11 +20,11 @@ do {
 
 //  print try again until user enters  the correct number.
 
-let cn = 7;
-let k;
+  let cn = 7;
+  let k;
 
-while (i != cn) {
-  k = prompt("Enter a number");
-  console.log("try again");
-}
-console.log("You entered correct numbe " + cn);
+  while (k != cn) {
+    k = prompt("Enter a number");
+    console.log("try again");
+  }
+  console.log("You entered correct numbe " + cn);
