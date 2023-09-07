@@ -13,8 +13,6 @@ let p = fetch("https://jsonplaceholder.typicode.com/posts")
     console.log(value2);
   });
 
-//  ****** Post Request *******
-
 // Cookie in javascript ....................
 // In cookie Storage object are send to server with each request.
 
@@ -26,4 +24,3 @@ let key = prompt("Enter your key");
 let value = prompt("Enter your value");
 document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
 console.log(document.cookie);
-

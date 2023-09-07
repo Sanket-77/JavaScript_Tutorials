@@ -1,5 +1,5 @@
 //  var is function scoped
-//  let is block scoped
+//  let and const is block scoped
 
 console.log("var let const");
 
@@ -15,7 +15,11 @@ const author = "sanket const";
   console.log(b);
   console.log(author);
 }
+b = "switch";
 console.log(b);
-// const author = "shubham"  // // Const => we can not redeclare const value.
+
+// Const => we can not redeclare const value.
+
+// author = "snk"; can not redeclare
 
 console.log(author);

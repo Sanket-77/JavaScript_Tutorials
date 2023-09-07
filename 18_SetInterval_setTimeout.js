@@ -5,7 +5,7 @@ setTimeout(function () {
   alert("Its all right");
 }, 5000);
 
-//  setTimeout .........
+//  setTimeout .........function execute after set  time
 
 let a = setTimeout(function () {
   alert("Its ok");

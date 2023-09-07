@@ -3,14 +3,14 @@
 let i = 0;
 let n = prompt("Enter Number");
 n = Number.parseInt(n);
-while (i < n) {
+while (i <= n) {
   console.log(i);
   i++;
 }
 
 //  DO While loop .............
 
-let j = 10;
+let j = 0;
 let m = prompt("Enter Number");
 m = Number.parseInt(m);
 do {
@@ -18,13 +18,13 @@ do {
   j++;
 } while (j < m);
 
-//  print try again until user enters  the correct number.
+//  print try again until user enters the correct number.
 
-  let cn = 7;
-  let k;
+let cn = 7;
+let k;
 
-  while (k != cn) {
-    k = prompt("Enter a number");
-    console.log("try again");
-  }
-  console.log("You entered correct numbe " + cn);
+while (k != cn) {
+  k = prompt("Enter a number");
+  console.log("try again");
+}
+console.log("You entered correct numbe " + cn);

@@ -6,7 +6,7 @@ a.onclick = () => {
   b.innerHTML = "Hello";
 };
 
-//  Add event listener
+//  Add Event Listener 
 
 btn.addEventListener("click", function (e) {
   alert("hello");

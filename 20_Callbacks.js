@@ -47,19 +47,4 @@ function multiply(a, b) {
 const result = calculate(10, 4, Addition);
 console.log(result);
 
-// ************* use of callback function ******************//
 
-const a = [2, 4, , 8, 7, -3, 6, 7, -1, 8, 9, 6];
-
-const firstnegativnum = (num) => {
-  return num < 0;
-};
-
-//  find ()
-const result1 = a.find(firstnegativnum);
-console.log(result1);
-
-// forEach()
-a.forEach((num) => {
-  console.log("array num ", num);
-});
