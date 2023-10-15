@@ -190,17 +190,169 @@ console.log(removeduplicate(arr2));
 
 //4. Reverse the digit.
 
-input: 123456
-output: 654321
+input: 123456;
+output: 654321;
 
-function inputNo(num){
-    var convertStr = num.toString();
-    var spltstr = convertStr.split("");
-    var result = "";
-    for(let i= spltstr.length -1 ; i >= 0 ; i--){
-        result = result + spltstr[i];
-    }
-    return parseInt(result);
+function inputNo(num) {
+  var convertStr = num.toString();
+  var spltstr = convertStr.split("");
+  var result = "";
+  for (let i = spltstr.length - 1; i >= 0; i--) {
+    result = result + spltstr[i];
+  }
+  return parseInt(result);
 }
 console.log(inputNo());
-// 
+
+//
+// **** FibonacciSeries ****=======>
+
+function generateFibonacciSeries() {
+  FibonacciSeries = [1, 2];
+
+  for (i = 2; i <= n; i++) {
+    FibonacciSeries[i] = FibonacciSeries[i - 1] + FibonacciSeries[i - 2];
+  }
+  return FibonacciSeries.slice(0, n + 1);
+}
+const n = 12;
+// console.log(generateFibonacciSeries(n));
+
+//  Filter Number from Array
+
+arr = [2, 1, "3", "16", 123];
+
+const filteredArr = arr.filter((x) => typeof x !== "string");
+const filteredArr2 = arr.filter((x) => typeof x !== "number");
+
+// console.log(filteredArr, filteredArr2);
+
+// write Array of name list if the value is more than 60
+
+const ob = { sanket: 60, prashant: 78, shubaham: 80, pratik: 47, sumit: 65 };
+
+function compair(ob) {
+  let result = [];
+  for (let item in ob) {
+    if (ob[item] > 60) {
+      result.push(item);
+    }
+  }
+  return result;
+}
+console.log(compair(ob));
+
+// 7}  flattened nested array
+
+ar = [1, 2, 3, [6, 7, [98, 90], 23, 4], 1];
+
+const flattenedNestedArray = (array) => {
+  let flattened = [];
+  array.forEach((element) => {
+    if (Array.isArray(element)) {
+      flattened = flattened.concat(flattenedNestedArray(element));
+    } else {
+      flattened.push(element);
+    }
+  });
+};
+
+console.log("flattenedNestedArray = ", flattenedNestedArray(ar));
+
+//8} find highest value in nested array
+
+const findHighestElement = (nestedArray) => {
+  let highestEl = Number.NEGATIVE_INFINITY;
+
+  nestedArray.forEach((subArray) => {
+    if (Array.isArray(subArray)) {
+      subArray.forEach((element) => {
+        if (element > highestEl) {
+          highestEl = element;
+        }
+      });
+    } else {
+      if (subArray > highestEl) {
+        highestEl = subArray;
+      }
+    }
+  });
+
+  return highestEl;
+};
+
+a2 = [1, 2, 3, [6, 7, [98, 90], 23, 4], 1];
+a3 = [
+  [1, 2, 3],
+  [78, 79, 80],
+  [84, 88],
+];
+
+console.log("HighestElemetfromnestedarray = ", findHighestElement(a3));
+
+//  9} find characte count from string
+
+const countChar = (str) => {
+  const charcount = {};
+  let cleanedString = str.replace(/[^A-Za-z]/g, "").toLowerCase();
+  for (let char of cleanedString) {
+    charcount[char] = (charcount[char] || 0) + 1;
+  }
+  console.log(cleanedString);
+
+  return charcount;
+};
+let sn = "SaNasana98";
+
+console.log(countChar(sn)); //{ s: 2, a: 4, n: 2 }
+
+// 10}  current Date
+
+var CurrentDate = new Date();
+
+let Date1 = CurrentDate.getDate();
+let Month = CurrentDate.getMonth() + 1;
+let Year = CurrentDate.getFullYear();
+
+console.log("Date ", Date1);
+console.log("Month", Month);
+console.log("Year ", Year);
+
+console.log(`${Date1} | ${Month} | ${Year}`);
+
+let hours = CurrentDate.getHours();
+let minutes = CurrentDate.getMinutes();
+let seconds = CurrentDate.getSeconds();
+
+console.log(`${hours}-${minutes}-${seconds}`);
+
+console.log(Date());
+console.log("CurrentDate ", CurrentDate);
+
+//  11} Find Leap Year
+
+const FindLeapYear = (startyear, endyear) => {
+  let Leapyear = [];
+  for (let year = startyear; year <= endyear; year++) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      Leapyear.push(year);
+    }
+  }
+  return Leapyear;
+};
+
+let startyear = 2002;
+let endyear = 2023;
+
+let result = FindLeapYear(startyear, endyear);
+console.log("Leap Year", result);
+
+//  ////// interchange the value
+
+let a1 = 4;
+let b1 = 5;
+
+[a1, b1] = [b1, a1];
+
+console.log("a1 = ", a1);
+console.log("b1 = ", b1);
